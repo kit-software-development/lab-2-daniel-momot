@@ -14,9 +14,7 @@ namespace Practice.HR
         ///     Имя человека.
         /// </summary>
         IName Name { get; set; }
-        string Info { get;  }
-
-
+        
         /// <summary>
         ///     Событие изменения имени челока.
         /// </summary>

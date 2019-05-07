@@ -15,6 +15,5 @@
         ///     Короткая форма имени.
         /// </summary>
         string ShortName { get; }
-        bool IsInvalid { get; }
     }
 }
