@@ -1,4 +1,5 @@
 ﻿using Practice.HR;
+using System;
 
 namespace Practice
 {
@@ -15,21 +16,27 @@ namespace Practice
         static void Main(string[] args)
         {
             IClient client = Builders.ClientBuilder()
-                .Name("Иванов", "Иван", "Иванович") 
+                .Name("иванов", "иван", "иванович")
                 .Discount(.1f)
                 .Build();
 
             IEmployee employee = Builders.EmployeeBuilder()
-                .Name("Сидоров", "Григорий", "Петрович")
+                .Name("сидоров", "григорий", "петрович")
                 .Department("Бухгалтерия")
                 .Build();
 
+            Console.WriteLine(client.Info);
+            Console.WriteLine(employee.Info);
+            Console.ReadKey();
+            
             /*
              * TODO #8: Собрать приложение. 
+             * DONE
              */
 
             /*
              * TODO #9: При помощи отладчика проверить типы и структуру объектов, адресованных переменными client и employee.
+             * DONE
              */
         }
     }
